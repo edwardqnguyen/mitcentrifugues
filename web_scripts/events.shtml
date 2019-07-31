@@ -1,0 +1,24 @@
+<!--#include file="header.shtml" -->
+<div class="col-xs-6">
+    <h1>Events</h1>
+
+    <!-- <div class="event"> -->
+    <!--     <b>Activities Midway</b> -->
+    <!--     <p> -->
+    <!--         Saturday, 4/14/2018 at 1:00 - 3:00 pm <br /> -->
+    <!--         Johnson Ice Rink -->
+    <!--     </p> -->
+    <!--     <p>Interested in joining us? Stop by our booth!</p> -->
+    <!-- </div> -->
+
+    <!-- <br /> -->
+    <div class="event">
+        <b>Fall Concert</b>
+        <p>
+            Friday, 12/7/2018 from 8-9pm <br />
+            10-250
+        </p>
+        <p>We have a fall and spring concert every year. Come join us for funny skits and good music.</p>
+    </div>
+</div>
+<!--#include file="footer.shtml" -->

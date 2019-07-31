@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2 class='ui header'>
+    Meet the Fugues!
+</h2>
+
+<h4 class='ui top attached header'>
+    Current members
+</h4>
+<div class='ui attached segment'>
+    <div class='wrap'>
+        {% for member in members %}
+            <div class='box'>
+                <div class='inner-content'>
+                    {% if member.picture %}
+                    <img src='{{ member.picture.url }}'
+                        style='width=75%; height=75%;'>
+                    </img>
+                    {% else %}
+                    <img src='{{ STATIC_URL }}images/blankavatar.png'
+                        style='width=100%; height=100%'>
+                    </img>
+                    {% endif %}
+                    <div class='description'>
+                        {{ member.name }} <br>
+                        {{ member.get_voice_part_display }}, Class of {{ member.year }}
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+<h4 class='ui top attached header'>
+    Our alumni
+</h4>
+<div class='ui attached segment'>
+    <div class='wrap'>
+        {% for member in alumni %}
+            <div class='box'>
+                <div class='inner-content'>
+                    <img src='{{ STATIC_URL }}images/blankavatar.png'
+                        style='width=100%'>
+                    </img>
+                    <div class='description'>
+                        {{ member.name }} <br>
+                        {{ member.get_voice_part_display }}, Class of {{ member.year }}
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

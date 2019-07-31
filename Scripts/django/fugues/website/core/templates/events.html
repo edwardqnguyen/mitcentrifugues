@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2 class='ui header'>
+    Our Events!
+</h2>
+
+{% for event in events %}
+    <div class='ui raised purple segment main-content'>
+        <div class='ui two column grid'>
+            <div class='column'>
+                {% if event.image %}
+                    <img src='{{ MEDIA_ROOT }}{{ event.image }}'
+                        style='width=100%'>
+                {% else %}
+                <img src='{{ STATIC_URL }}images/emptyevent.png'
+                    style='width=100%'> 
+                {% endif %}
+            </div>
+            <div class='column'>
+                <h4 class='ui black header'>{{ event.name }}</h5>
+                <h5 class='ui purple header'>
+                    {{ event.start|date:"D F j, Y"}} | {{ event.start|date:"g:i A" }}
+                    - {{ event.end|date:"g:i A" }} | {{ event.location }}
+                </h5>
+                <div class='ui divider'></div>
+                <p>{{ event.description|linebreaks }}</p>
+                {% if event.link %}
+                <a href='{{ event.link }}'>More information here!</a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% empty %}
+    <p>We currently don't have any events posted :( Check back later! </p>
+{% endfor %}
+{% endblock %}

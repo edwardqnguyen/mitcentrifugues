@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang='en'>
+    <head>
+        <link rel='stylesheet' type='text/css' href='{{ STATIC_URL }}css/semantic.css'>
+        <link rel='stylesheet' type='text/css' href='{{ STATIC_URL }}css/styles.css'>
+
+        <script src='{{ STATIC_URL }}js/jquery.min.js'></script>
+        <script src='{{ STATIC_URL }}js/jquery-address.js'></script>
+        <script src='{{ STATIC_URL }}js/semantic.js'></script>
+    </head>
+    <body>
+        <div class='ui segment' style='background-color:black; color:white;'>
+            <a id='logo' class='item' href='{% url 'home' %}'>
+                <img src='{{ STATIC_URL }}images/logo.jpg'
+                    width=40%>
+            </a>
+            <ul>
+                <li><a href='{% url 'events' %}'>
+                    Upcoming Events
+                </a></li>
+                <li><a href='{% url 'members' %}'>
+                    Meet the Fugues 
+                </a></li>
+                <li><a href='{% url 'home' %}'>
+                    About Us
+                </a></li>
+            </ul>
+        </div>
+    
+        <div class='ui segment'>
+            {% block content %} {% endblock %}
+
+        </div>
+        <div class='ui horizontal divider'>
+            <i class='sign icon'></i>
+        </div>
+        <p class='right'>Questions? Contact us at <a href='mailto:centrifugues@mit.edu'>centrifugues@mit.edu</a>!</p>
+    </body>
+</html>

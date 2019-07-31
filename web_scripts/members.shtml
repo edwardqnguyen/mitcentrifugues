@@ -1,0 +1,17 @@
+<!--#include file="header.shtml" -->
+
+<script src="lib/mustache.min.js"></script>
+<script id="membersTemplate" type="x-tmpl-mustache">
+{{#.}}
+<div class="member col-xs-4">
+  <div><img src="./members/{{kerberos}}.jpg" class="face" /></div>
+  <div><strong>{{name}}</strong></div>
+  <div><span>{{part}}</span></div>
+  <br></br>
+</div>
+{{/.}}
+</script>
+
+<script src="members.js"></script> 
+
+<!--#include file="footer.shtml" -->

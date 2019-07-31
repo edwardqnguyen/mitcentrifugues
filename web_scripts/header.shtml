@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Centrifugues</title>
+    <link rel="icon" href="./images.favicon.png">
+    <!-- Load style sheets -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Load any supplemental Javascript libraries here -->
+    <script src="lib/jquery.min.js"></script> 
+    <script src="lib/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <span><a href="./"><img id="logo" src="./images/logo.jpg" /></a></span>
+        <span class="navLinks">
+            <a href="./" class="link">Home</a>
+            <a href="./members.shtml" class="link">Members</a>
+            <a href="./events.shtml" class="link">Events</a>
+            <a href="./auditions.shtml" class="link">Auditions</a>
+            <a href="https://www.facebook.com/centrifugues/" target="_blank"><img src="./images/facebook.png" class="social"/></a>
+            <a href="https://www.youtube.com/channel/UCfh5hkwYwXP7Z0F7UiJbdYA" target="_blank"><img src="./images/youtube.png" class="social" /></a>
+            <a href="mailto:centrifugues@mit.edu" target="_blank"><img src="./images/email.png" class="social"/></a>
+        </span>
+    </div>
+    <div class="container" id="page">

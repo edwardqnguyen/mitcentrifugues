@@ -1,0 +1,48 @@
+html {
+    font-family: 'Verdana', sans-serif;
+}
+
+.container {
+    font-size: 20px;
+}
+
+.link {
+    color: #B29600;
+    font-size: 3vh;
+    margin: 3vw;
+}
+
+a {
+    color: #B29600;
+}
+
+a:hover {
+    color: #C0C0C0;
+    text-decoration: none;
+    cursor:pointer;
+}
+.navLinks {
+    float: right;
+    padding: 6vh;
+}
+
+.face {
+    height: 200px;
+    width: auto;
+    border-radius: 10px;
+}
+
+
+#logo {
+    height: 16vh;
+}
+
+.navbar {
+    background-color: black;
+}
+
+.event {
+    padding: 10px;
+}
+
+

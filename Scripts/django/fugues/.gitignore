@@ -1,0 +1,5 @@
+# Private files
+#db.sqlite3
+
+# compiled stuff
+*.pyc
