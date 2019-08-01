@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 
-class CredentialsPage extends Component {
+class MembersPage extends Component {
   
   render() {
     return (
       <div id="content">
-        <h3>Credentials</h3>
+        <h3>Members</h3>
       </div>
     )
   }
@@ -13,4 +13,4 @@ class CredentialsPage extends Component {
   }
 }
 
-export default CredentialsPage;
+export default MembersPage;

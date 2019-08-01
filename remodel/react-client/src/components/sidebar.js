@@ -1,5 +1,4 @@
-import {Navbar, Nav, NavItem, Button, Glyphicon} from 'react-bootstrap';
- 
+import {Navbar, Nav, NavItem, Button, Glyphicon, Image} from 'react-bootstrap';
 import React, {Component} from 'react';
  
 class Sidebar extends Component {
@@ -15,12 +14,30 @@ class Sidebar extends Component {
   render() {
     return (
       <div class="sidenav">
-        <nav class="nav">
-          <a class="nav-link active" href="#">About Me</a>
-          <a class="nav-link" href="#">Resume</a>
-          <a class="nav-link" href="#">Music</a>
-          <a class="nav-link" href="#">Contact</a>
-        </nav>
+        <Image src={require('../icons/logo.jpg')} id='logo'/>
+        <Nav class="nav">
+          <NavItem>
+            <a class="nav-link active" href="/">Home</a>
+          </NavItem>
+          <NavItem>
+            <a class="nav-link" href="/members">Members</a>
+          </NavItem>
+          <NavItem>
+            <a class="nav-link" href="/events">Events</a>
+          </NavItem>
+          <NavItem>
+            <a class="nav-link" href="/auditions">Auditions</a>
+          </NavItem>
+          <NavItem>
+            <Image src={require('../icons/email.png')} id='email'/>
+          </NavItem>
+          <NavItem>
+            <Image src={require('../icons/facebook.png')} id='facebook'/>
+          </NavItem>
+          <NavItem>
+            <Image src={require('../icons/youtube.png')} id='youtube'/>
+          </NavItem>
+        </Nav>
       </div>
     )
   }
